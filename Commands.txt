@@ -11,5 +11,5 @@ assignment
 6) db.Employee.find({"city":"Gurgoan"}).pretty()
 7) db.Employee.find({ "salary.0": { $lt: 20000 } }).pretty()
 8) db.Employee.find({ "salary.0": { $lt: 20000} , "city":"Gurgoan"}).pretty()
-9)
+9) db.Employee.find({ }, { "salary.0": 1,_id : 0}).pretty()
 10) db.Employee.find({"city":"Gurgoan"} ).pretty().count()
